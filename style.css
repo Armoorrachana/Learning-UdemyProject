@@ -1,0 +1,6361 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+/* =========================
+   TOP BANNER
+========================= */
+
+.top-banner{
+    height:52px;
+    background:#d8f3f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-size:14px;
+    font-weight:700;
+}
+
+.top-banner a{
+    color:#000;
+    font-weight:700;
+}
+
+.top-banner i{
+    position:absolute;
+    right:18px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    height:76px;
+    display:flex;
+    align-items:center;
+    padding:0 22px;
+    border-bottom:1px solid #e5e7eb;
+    background:#fff;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    font-size:54px;
+    font-weight:700;
+    color:#111418;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    letter-spacing:-2px;
+    margin-right:22px;
+}
+
+.logo-u{
+    color:#a435f0;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    margin-right:28px;
+}
+
+.menu span{
+    font-size:16px;
+    font-weight:400;
+    color:#2d2f31;
+    cursor:pointer;
+}
+
+.menu span:hover{
+    color:#5624d0;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box{
+    flex:1;
+    max-width:760px;
+    height:52px;
+    border:1px solid #9194ac;
+    border-radius:999px;
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+    margin-right:28px;
+}
+
+.search-box i{
+    font-size:18px;
+    color:#6a6f73;
+    margin-right:14px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:17px;
+    background:transparent;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2d2f31;
+    font-size:16px;
+    font-weight:400;
+}
+
+nav a:hover{
+    color:#5624d0;
+}
+
+nav i{
+    font-size:22px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+/* 👇 Paste the new button CSS here */
+
+.buttons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:20px;
+}
+
+.login{
+    width:96px;
+    height:40px;
+    border:1px solid #6d28d9;
+    background:#fff;
+    color:#5624d0;
+    font-size:15px;
+    font-weight:700;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.signup{
+    width:96px;
+    height:40px;
+    border:none;
+    background:#5624d0;
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.globe{
+    width:40px;
+    height:40px;
+    border:1px solid #6d28d9;
+    background:#fff;
+    border-radius:4px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.globe i{
+    font-size:18px;
+    color:#1c1d1f;
+}
+
+.login:hover{
+    background:#f7f7f7;
+}
+
+.signup:hover{
+    background:#6d28d9;
+}
+
+.globe:hover{
+    background:#f7f7f7;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+.menu{
+display:none;
+}
+
+nav a:nth-child(1),
+nav a:nth-child(2){
+display:none;
+}
+
+.search-box{
+margin-right:15px;
+}
+
+.logo{
+font-size:46px;
+}
+}
+.bi-cart3{
+    font-size:24px;
+    color:#a435f0;
+    cursor:pointer;
+}
+
+/* Hero */
+
+/* ================= HERO ================= */
+
+.hero{
+    width:90%;
+    margin:40px auto;
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    border-radius:6px;
+    display:block;
+}
+
+.hero-box{
+    position:absolute;
+    top:60px;
+    left:60px;
+
+    width:320px;
+    height:auto;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:3px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.18);
+}
+
+.hero-box h1{
+    font-size:34px;
+    line-height:42px;
+    margin-bottom:15px;
+}
+
+.hero-box span{
+    color:#7b2cbf;
+}
+
+.hero-box p{
+    font-size:15px;
+    line-height:24px;
+    color:#555;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#7b2cbf;
+    color:#fff;
+    text-decoration:none;
+    border-radius:4px;
+}
+
+
+
+/* Categories */
+/* =========================================================
+   SKILLS / CATEGORY CAROUSEL
+========================================================= */
+
+.categories {
+    width: 90%;
+    margin: 70px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   LEFT TEXT
+========================================================= */
+
+.category-text {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.category-text h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #1c1d1f;
+    margin: 0;
+}
+
+.category-text em {
+    font-style: italic;
+}
+
+.category-text p {
+    margin-top: 18px;
+    color: #666;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   HIDE RADIO BUTTONS
+========================================================= */
+
+#page1,
+#page2,
+#page3,
+#page4,
+#page5,
+#page6,
+#page7 {
+    display: none;
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.carousel {
+    flex: 1;
+    min-width: 0;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 75px;
+}
+
+
+/* =========================================================
+   CARD WINDOW
+========================================================= */
+
+.card-window {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD TRACK
+========================================================= */
+
+.card-track {
+    display: flex;
+
+    gap: 20px;
+
+    width: max-content;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.skill-card {
+    width: 300px;
+    height: 330px;
+
+    min-width: 300px;
+
+    flex: 0 0 300px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: transparent;
+
+    padding: 0;
+    margin: 0;
+
+    box-shadow: none;
+
+    transform: none !important;
+
+    transition: none !important;
+}
+
+
+/* =========================================================
+   IMAGE - FULL CARD
+========================================================= */
+
+.skill-card img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    transform: none !important;
+
+    filter: none !important;
+
+    transition: none !important;
+}
+
+
+/* =========================================================
+   WHITE NAME BOX
+========================================================= */
+
+.card-label {
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    height: 75px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #1c1d1f;
+
+    font-size: 17px;
+
+    z-index: 10;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    transition: none !important;
+}
+
+
+/* =========================================================
+   CARD ARROW
+========================================================= */
+
+.card-label span:last-child {
+    font-size: 26px;
+
+    color: #1c1d1f;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   IMPORTANT - NO HOVER EFFECT ON CARD
+========================================================= */
+
+.skill-card:hover {
+    background: transparent !important;
+
+    transform: none !important;
+
+    box-shadow: none !important;
+
+    color: #1c1d1f !important;
+}
+
+.skill-card:hover img {
+    transform: none !important;
+
+    filter: none !important;
+}
+
+.skill-card:hover .card-label {
+    background: #ffffff !important;
+
+    color: #1c1d1f !important;
+
+    transform: none !important;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+/* =========================================================
+   CAROUSEL ARROWS
+========================================================= */
+
+.arrow {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1c1d1f;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+
+    transform: none !important;
+
+    transition: none !important;
+}
+
+
+/* =========================================================
+   LEFT ARROW
+========================================================= */
+
+.left-arrow {
+    left: 50%;
+
+    margin-left: -120px;
+}
+
+
+/* =========================================================
+   RIGHT ARROW
+========================================================= */
+
+.right-arrow {
+    right: 50%;
+
+    margin-right: -120px;
+}
+
+
+/* =========================================================
+   ARROW HOVER - NO CHANGE
+========================================================= */
+
+.arrow:hover {
+    background: #ffffff !important;
+
+    color: #1c1d1f !important;
+
+    transform: none !important;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10) !important;
+}
+
+
+/* =========================================================
+   PAGE 1 ARROW
+========================================================= */
+
+#page1:checked ~ .carousel .p1-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 2 ARROWS
+========================================================= */
+
+#page2:checked ~ .carousel .p2-left,
+#page2:checked ~ .carousel .p2-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 3 ARROWS
+========================================================= */
+
+#page3:checked ~ .carousel .p3-left,
+#page3:checked ~ .carousel .p3-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 4 ARROWS
+========================================================= */
+
+#page4:checked ~ .carousel .p4-left,
+#page4:checked ~ .carousel .p4-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 5 ARROWS
+========================================================= */
+
+#page5:checked ~ .carousel .p5-left,
+#page5:checked ~ .carousel .p5-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 6 ARROWS
+========================================================= */
+
+#page6:checked ~ .carousel .p6-left,
+#page6:checked ~ .carousel .p6-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 7 ARROW
+========================================================= */
+
+#page7:checked ~ .carousel .p7-left {
+    display: flex;
+}
+
+
+/* =========================================================
+   MOVE CARDS
+========================================================= */
+
+#page1:checked ~ .carousel .card-track {
+    transform: translateX(0);
+}
+
+#page2:checked ~ .carousel .card-track {
+    transform: translateX(-320px);
+}
+
+#page3:checked ~ .carousel .card-track {
+    transform: translateX(-640px);
+}
+
+#page4:checked ~ .carousel .card-track {
+    transform: translateX(-960px);
+}
+
+#page5:checked ~ .carousel .card-track {
+    transform: translateX(-1280px);
+}
+
+#page6:checked ~ .carousel .card-track {
+    transform: translateX(-1600px);
+}
+
+#page7:checked ~ .carousel .card-track {
+    transform: translateX(-1920px);
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.carousel-dots {
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   DOT
+========================================================= */
+
+.carousel-dots label {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #e7e9f2;
+
+    cursor: pointer;
+
+    transition: none !important;
+}
+
+
+/* =========================================================
+   ACTIVE DOT
+========================================================= */
+
+#page1:checked ~ .carousel .carousel-dots label:nth-child(1),
+#page2:checked ~ .carousel .carousel-dots label:nth-child(2),
+#page3:checked ~ .carousel .carousel-dots label:nth-child(3),
+#page4:checked ~ .carousel .carousel-dots label:nth-child(4),
+#page5:checked ~ .carousel .carousel-dots label:nth-child(5),
+#page6:checked ~ .carousel .carousel-dots label:nth-child(6),
+#page7:checked ~ .carousel .carousel-dots label:nth-child(7) {
+    width: 45px;
+
+    border-radius: 20px;
+
+    background: #7b2cbf;
+}
+
+
+/* =========================================================
+   DOT HOVER - NO CHANGE
+========================================================= */
+
+.carousel-dots label:hover {
+    background: #e7e9f2 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .categories {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .category-text {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 280px;
+        min-width: 280px;
+        flex-basis: 280px;
+
+        height: 310px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .categories {
+        width: 95%;
+
+        margin: 50px auto;
+    }
+
+    .category-text h2 {
+        font-size: 28px;
+
+        line-height: 36px;
+    }
+
+    .skill-card {
+        width: 250px;
+        min-width: 250px;
+        flex-basis: 250px;
+
+        height: 300px;
+    }
+
+    .carousel {
+        padding-bottom: 65px;
+    }
+
+    .left-arrow {
+        margin-left: -95px;
+    }
+
+    .right-arrow {
+        margin-right: -95px;
+    }
+
+
+    /* MOBILE CARD MOVEMENT */
+
+    #page1:checked ~ .carousel .card-track {
+        transform: translateX(0);
+    }
+
+    #page2:checked ~ .carousel .card-track {
+        transform: translateX(-270px);
+    }
+
+    #page3:checked ~ .carousel .card-track {
+        transform: translateX(-540px);
+    }
+
+    #page4:checked ~ .carousel .card-track {
+        transform: translateX(-810px);
+    }
+
+    #page5:checked ~ .carousel .card-track {
+        transform: translateX(-1080px);
+    }
+
+    #page6:checked ~ .carousel .card-track {
+        transform: translateX(-1350px);
+    }
+
+    #page7:checked ~ .carousel .card-track {
+        transform: translateX(-1620px);
+    }
+}
+
+/* ================= COURSES ================= */
+/* =========================================================
+   TRENDING COURSES
+========================================================= */
+
+.trending-courses {
+    width: 90%;
+    margin: 60px auto;
+    position: relative;
+}
+
+.trending-courses h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #1c1d1f;
+    margin: 0 0 25px;
+}
+
+
+/* =========================================================
+   HIDE RADIO BUTTONS
+========================================================= */
+
+#course-page1,
+#course-page2,
+#course-page3,
+#course-page4,
+#course-page5,
+#course-page6 {
+    display: none;
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.course-carousel {
+    width: 100%;
+    position: relative;
+}
+
+
+/* =========================================================
+   COURSE WINDOW
+========================================================= */
+
+.course-window {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =========================================================
+   COURSE TRACK
+========================================================= */
+
+.course-container {
+    --gap: 20px;
+
+    display: flex;
+    gap: var(--gap);
+
+    width: max-content;
+
+    transition: transform 0.6s ease;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   COURSE CARD
+
+   FOUR CARDS VISIBLE
+========================================================= */
+
+.course-card {
+    width: calc((90vw * 0.9 - 60px) / 4);
+    min-width: calc((90vw * 0.9 - 60px) / 4);
+
+    flex: 0 0 calc((90vw * 0.9 - 60px) / 4);
+
+    box-sizing: border-box;
+
+    background: #f7f7f7;
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    overflow: visible;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* =========================================================
+   COURSE IMAGE
+========================================================= */
+
+.course-card > img {
+    width: calc(100% - 40px);
+
+    height: 195px;
+
+    margin: 20px 20px 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   COURSE INFO
+========================================================= */
+
+.course-info {
+    padding: 0 20px 18px;
+
+    position: relative;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.course-info h3 {
+    font-size: 19px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    color: #1c1d1f;
+
+    margin: 18px 0 7px;
+
+    min-height: 48px;
+
+    max-height: 48px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   INSTRUCTOR
+========================================================= */
+
+.instructor {
+    font-size: 13px;
+
+    line-height: 20px;
+
+    color: #6a6f73;
+
+    margin: 0 0 16px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   COURSE DETAILS
+========================================================= */
+
+.course-details {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    flex-wrap: nowrap !important;
+
+    gap: 5px !important;
+
+    width: 100% !important;
+
+    height: 30px !important;
+
+    min-height: 30px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.course-details > .badge {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 30px;
+
+    padding: 0 8px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    background: #c7ecef;
+
+    color: #164e59;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.course-details > .rating {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 30px;
+
+    padding: 0 7px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #cfd5dc;
+
+    border-radius: 4px;
+
+    color: #b4690e;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   RATINGS COUNT
+========================================================= */
+
+.course-details > .ratings-count {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 30px;
+
+    padding: 0 7px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #cfd5dc;
+
+    border-radius: 4px;
+
+    color: #6a6f73;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.course-info .price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    margin-bottom: 0;
+
+    padding: 0;
+}
+
+
+.course-info .current {
+    font-size: 19px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    color: #1c1d1f;
+
+    white-space: nowrap;
+}
+
+
+.course-info .old {
+    font-size: 14px;
+
+    line-height: 20px;
+
+    color: #6a6f73;
+
+    text-decoration: line-through;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.course-card {
+    background: #ffffff;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.course-card:hover {
+    background-color: #f3f3f3;
+    border-color: #d5d5d5;
+}
+
+/* =========================================================
+   HOVER INFORMATION BOX
+========================================================= */
+
+.course-hover-box {
+    position: absolute;
+
+    top: -30px;
+
+    left: calc(100% + 20px);
+
+    width: 400px;
+
+    min-height: 420px;
+
+    box-sizing: border-box;
+
+    padding: 28px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #cfd5dc;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    z-index: 9999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateX(-10px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+}
+
+
+/* =========================================================
+   SHOW HOVER BOX
+========================================================= */
+
+.course-card:hover .course-hover-box {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   HOVER BOX ARROW
+========================================================= */
+
+.course-hover-box::before {
+    content: "";
+
+    position: absolute;
+
+    left: -20px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 0;
+
+    height: 0;
+
+    border-top: 12px solid transparent;
+
+    border-bottom: 12px solid transparent;
+
+    border-right: 20px solid #cfd5dc;
+}
+
+
+.course-hover-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: -18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 0;
+
+    height: 0;
+
+    border-top: 11px solid transparent;
+
+    border-bottom: 11px solid transparent;
+
+    border-right: 18px solid #ffffff;
+}
+
+
+/* =========================================================
+   HOVER BOX TITLE
+========================================================= */
+
+.course-hover-box h4 {
+    font-size: 22px;
+
+    line-height: 30px;
+
+    font-weight: 700;
+
+    color: #2d2f3a;
+
+    margin: 0 0 12px;
+}
+
+
+/* =========================================================
+   HOVER STATUS
+========================================================= */
+
+.hover-status {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    color: #26734d;
+}
+
+
+/* =========================================================
+   PREMIUM
+========================================================= */
+
+.hover-premium {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #6d28d9;
+
+    color: #ffffff;
+
+    border-radius: 4px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BESTSELLER
+========================================================= */
+
+.hover-bestseller {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #c7ecef;
+
+    color: #164e59;
+
+    border-radius: 4px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HOVER META
+========================================================= */
+
+.hover-meta {
+    font-size: 14px;
+
+    line-height: 22px;
+
+    color: #6a6f73;
+
+    margin: 0 0 12px;
+}
+
+
+/* =========================================================
+   HOVER DESCRIPTION
+========================================================= */
+
+.course-hover-box > p:not(.hover-meta) {
+    font-size: 16px;
+
+    line-height: 28px;
+
+    color: #4b4f5a;
+
+    margin: 0 0 14px;
+}
+
+
+/* =========================================================
+   HOVER LIST
+========================================================= */
+
+.course-hover-box ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 10px 0 22px;
+}
+
+
+.course-hover-box li {
+    position: relative;
+
+    padding-left: 30px;
+
+    margin-bottom: 14px;
+
+    font-size: 16px;
+
+    line-height: 25px;
+
+    color: #4b4f5a;
+}
+
+
+.course-hover-box li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    font-size: 17px;
+
+    color: #1c1d1f;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ADD TO CART BUTTON
+========================================================= */
+
+.course-hover-box button {
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #6d28d9;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.course-hover-box button:hover {
+    background: #5620ad;
+}
+
+
+/* =========================================================
+   SIDE ARROW BUTTONS
+========================================================= */
+
+.course-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    width: 58px;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 10000;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    font-size: 0;
+}
+
+
+/* =========================================================
+   LEFT ARROW
+========================================================= */
+
+.course-left {
+    left: -30px;
+}
+
+
+.course-left::after {
+    content: "‹";
+
+    font-family: Arial, sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    color: #1c1d1f;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   RIGHT ARROW
+========================================================= */
+
+.course-right {
+    right: -30px;
+}
+
+
+.course-right::after {
+    content: "›";
+
+    font-family: Arial, sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    color: #1c1d1f;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   ARROW HOVER
+========================================================= */
+
+.course-arrow:hover {
+    background: #ffffff;
+
+    transform: translateY(-50%);
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   PAGE 1 ARROW
+========================================================= */
+
+#course-page1:checked ~ .course-carousel .page1-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 2 ARROWS
+========================================================= */
+
+#course-page2:checked ~ .course-carousel .page2-left,
+#course-page2:checked ~ .course-carousel .page2-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 3 ARROWS
+========================================================= */
+
+#course-page3:checked ~ .course-carousel .page3-left,
+#course-page3:checked ~ .course-carousel .page3-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 4 ARROWS
+========================================================= */
+
+#course-page4:checked ~ .course-carousel .page4-left,
+#course-page4:checked ~ .course-carousel .page4-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 5 ARROWS
+========================================================= */
+
+#course-page5:checked ~ .course-carousel .page5-left,
+#course-page5:checked ~ .course-carousel .page5-right {
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 6 ARROW
+========================================================= */
+
+#course-page6:checked ~ .course-carousel .page6-left {
+    display: flex;
+}
+
+
+/* =========================================================
+   CARD MOVEMENT
+
+   PAGE 1 = CARDS 1-4
+   PAGE 2 = CARDS 2-5
+   PAGE 3 = CARDS 3-6
+   PAGE 4 = CARDS 4-7
+   PAGE 5 = CARDS 5-8
+   PAGE 6 = CARDS 6-9
+========================================================= */
+
+#course-page1:checked ~ .course-carousel .course-container {
+    transform: translateX(0);
+}
+
+
+#course-page2:checked ~ .course-carousel .course-container {
+    transform: translateX(
+        calc(-1 * ((90vw * 0.9 - 60px) / 4 + 20px))
+    );
+}
+
+
+#course-page3:checked ~ .course-carousel .course-container {
+    transform: translateX(
+        calc(-2 * ((90vw * 0.9 - 60px) / 4 + 20px))
+    );
+}
+
+
+#course-page4:checked ~ .course-carousel .course-container {
+    transform: translateX(
+        calc(-3 * ((90vw * 0.9 - 60px) / 4 + 20px))
+    );
+}
+
+
+#course-page5:checked ~ .course-carousel .course-container {
+    transform: translateX(
+        calc(-4 * ((90vw * 0.9 - 60px) / 4 + 20px))
+    );
+}
+
+
+#course-page6:checked ~ .course-carousel .course-container {
+    transform: translateX(
+        calc(-5 * ((90vw * 0.9 - 60px) / 4 + 20px))
+    );
+}
+
+
+/* =========================================================
+   NO DOTS
+========================================================= */
+
+.course-dots {
+    display: none !important;
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   ALLOW HOVER BOX TO BE VISIBLE
+========================================================= */
+
+.course-carousel {
+    overflow: visible;
+}
+
+.course-window {
+    overflow: visible;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .trending-courses {
+        width: 92%;
+    }
+
+
+    .course-card {
+        width: 300px;
+
+        min-width: 300px;
+
+        flex-basis: 300px;
+    }
+
+
+    .course-card > img {
+        width: calc(100% - 30px);
+
+        height: 190px;
+
+        margin: 15px 15px 0;
+    }
+
+
+    .course-info {
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+
+    .course-details {
+        gap: 4px !important;
+    }
+
+
+    #course-page2:checked ~ .course-carousel .course-container {
+        transform: translateX(-320px);
+    }
+
+
+    #course-page3:checked ~ .course-carousel .course-container {
+        transform: translateX(-640px);
+    }
+
+
+    #course-page4:checked ~ .course-carousel .course-container {
+        transform: translateX(-960px);
+    }
+
+
+    #course-page5:checked ~ .course-carousel .course-container {
+        transform: translateX(-1280px);
+    }
+
+
+    #course-page6:checked ~ .course-carousel .course-container {
+        transform: translateX(-1600px);
+    }
+
+
+    .course-hover-box {
+        width: 370px;
+
+        padding: 24px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .trending-courses {
+        width: 95%;
+    }
+
+
+    .trending-courses h2 {
+        font-size: 30px;
+
+        line-height: 38px;
+    }
+
+
+    .course-card {
+        width: 280px;
+
+        min-width: 280px;
+
+        flex-basis: 280px;
+    }
+
+
+    .course-card > img {
+        height: 180px;
+    }
+
+
+    .course-arrow {
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .course-left {
+        left: -10px;
+    }
+
+
+    .course-right {
+        right: -10px;
+    }
+
+
+    #course-page2:checked ~ .course-carousel .course-container {
+        transform: translateX(-300px);
+    }
+
+
+    #course-page3:checked ~ .course-carousel .course-container {
+        transform: translateX(-600px);
+    }
+
+
+    #course-page4:checked ~ .course-carousel .course-container {
+        transform: translateX(-900px);
+    }
+
+
+    #course-page5:checked ~ .course-carousel .course-container {
+        transform: translateX(-1200px);
+    }
+
+
+    #course-page6:checked ~ .course-carousel .course-container {
+        transform: translateX(-1500px);
+    }
+
+
+    /*
+       On mobile the hover box is placed
+       over the card instead of outside it.
+    */
+
+    .course-hover-box {
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        min-height: 100%;
+
+        padding: 22px;
+
+        transform: translateY(10px);
+    }
+
+
+    .course-card:hover .course-hover-box {
+        transform: translateY(0);
+    }
+
+
+    .course-hover-box::before,
+    .course-hover-box::after {
+        display: none;
+    }
+
+
+    .course-hover-box h4 {
+        font-size: 19px;
+
+        line-height: 26px;
+    }
+
+
+    .course-hover-box > p:not(.hover-meta) {
+        font-size: 14px;
+
+        line-height: 22px;
+    }
+
+
+    .course-hover-box li {
+        font-size: 14px;
+
+        line-height: 22px;
+    }
+
+
+    .course-hover-box button {
+        height: 50px;
+
+        font-size: 16px;
+    }
+}
+/*================ SUBSCRIPTION =================*/
+
+.subscription{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+    background:#1f2233;
+    border-radius:22px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:35px;
+
+    padding:40px 35px;
+}
+
+.left{
+    flex:1;
+}
+
+.left h1{
+    font-size:28px;
+    font-weight:700;
+    line-height:1.25;
+    color:#fff;
+    margin-bottom:18px;
+    max-width:520px;
+}
+
+.left span{
+    color:#b98cff;
+}
+
+.left p{
+    color:#d7d7d7;
+    font-size:17px;
+    line-height:28px;
+    margin-bottom:24px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-bottom:28px;
+}
+
+.feature{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.feature span{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#ece8ff;
+    color:#1f2233;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.feature p{
+    margin:0;
+    color:#fff;
+    font-size:16px;
+    line-height:25px;
+}
+
+.subscribe-btn{
+    background:#fff;
+    color:#1f2233;
+    border:none;
+    padding:15px 34px;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.subscribe-btn:hover{
+    background:#f2f2f2;
+    transform:translateY(-2px);
+}
+
+.learn-more{
+    display:inline-block;
+    margin-top:18px;
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.learn-more:hover{
+    color:#b98cff;
+}
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right img{
+    width:100%;
+    max-width:560px;
+    height:380px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.right img:hover{
+    transform:none;
+}
+
+/*================ TABLET =================*/
+
+@media(max-width:992px){
+
+.subscription{
+    width:90%;
+    flex-direction:column;
+    text-align:center;
+    padding:35px;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+    text-align:left;
+}
+
+.right img{
+    max-width:520px;
+    height:330px;
+}
+
+}
+
+/*================ MOBILE =================*/
+
+@media(max-width:768px){
+
+.subscription{
+    width:95%;
+    padding:25px;
+    gap:25px;
+}
+
+.left h1{
+    font-size:30px;
+    line-height:38px;
+}
+
+.left p{
+    font-size:15px;
+    line-height:24px;
+}
+
+.features{
+    grid-template-columns:1fr;
+    gap:14px;
+}
+
+.feature span{
+    width:36px;
+    height:36px;
+    font-size:17px;
+}
+
+.feature p{
+    font-size:14px;
+}
+
+.subscribe-btn{
+    width:100%;
+}
+
+.learn-more{
+    display:block;
+    text-align:center;
+}
+
+.right img{
+    width:100%;
+    max-width:100%;
+    height:250px;
+}
+
+}
+/*================ SKILLS SECTION =================*/
+
+/* =========================================================
+   SKILLS / COURSES SECTION
+========================================================= */
+
+.skills-courses-section {
+    width: 100%;
+    max-width: 1600px;
+    margin: 45px auto 0;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.skills-courses-section h2 {
+    margin: 0 0 8px;
+    color: #1c1d1f;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.skills-courses-section .subtitle {
+    margin: 0 0 25px;
+    color: #6a6f73;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.skills-tabs {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d1d7dc;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.skills-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-tabs a {
+    position: relative;
+    display: block;
+    padding: 0 5px 14px;
+    color: #6a6f73;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.skills-tabs a.active {
+    color: #1c1d1f;
+}
+
+.skills-tabs a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: #1c1d1f;
+}
+
+
+/* =========================================================
+   HIDE RADIO BUTTONS
+========================================================= */
+
+.skills-courses-section > input[type="radio"] {
+    display: none;
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.skills-carousel {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =========================================================
+   WINDOW
+
+   IMPORTANT:
+   visible is required so the hover information box
+   can appear outside the card.
+========================================================= */
+
+.skills-window {
+    width: 100%;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.skills-track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.45s ease;
+}
+
+
+/* =========================================================
+   EACH PAGE
+   4 CARDS PER PAGE
+========================================================= */
+
+.skills-page {
+    width: 33.333333%;
+    min-width: 33.333333%;
+    flex: 0 0 33.333333%;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.skill-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #d1d7dc;
+    border-radius: 14px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    /* IMPORTANT:
+       Do NOT use overflow:hidden here.
+       Otherwise hover box gets cut off.
+    */
+    overflow: visible;
+
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.skill-card:hover {
+    background-color: #f3f3f3;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.10);
+
+    z-index: 100;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.skill-card > img {
+    display: block;
+
+    width: 100%;
+    height: 215px;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 18px 0 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.skill-content h3 {
+    margin: 0;
+
+    color: #1c1d1f;
+
+    font-size: 20px;
+    line-height: 26px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.skill-author {
+    margin: 8px 0 0;
+
+    color: #6a6f73;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   BADGE + RATING + RATINGS
+========================================================= */
+
+.skill-details {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    width: 100%;
+
+    margin-top: 28px;
+
+    min-height: 28px;
+
+    flex-wrap: nowrap;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.skill-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 28px;
+
+    padding: 0 10px;
+
+    background: #c2e9eb;
+
+    color: #0b4a5a;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PREMIUM
+========================================================= */
+
+.skill-badge.premium {
+    background: #5624d0;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   STAR RATING
+========================================================= */
+
+.skill-rating {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 28px;
+
+    padding: 0 9px;
+
+    background: #ffffff;
+
+    border: 1px solid #c5cad0;
+
+    border-radius: 4px;
+
+    color: #b46900;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   RATINGS COUNT
+========================================================= */
+
+.skill-ratings {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 28px;
+
+    padding: 0 9px;
+
+    background: #ffffff;
+
+    border: 1px solid #c5cad0;
+
+    border-radius: 4px;
+
+    color: #6a6f73;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.skill-price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding: 0;
+}
+
+
+/* CURRENT PRICE */
+
+.skill-current {
+    color: #1c1d1f;
+
+    font-size: 21px;
+
+    line-height: 26px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* OLD PRICE */
+
+.skill-old {
+    color: #6a6f73;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    text-decoration: line-through;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   =========================================================
+   HOVER INFORMATION BOX
+   =========================================================
+========================================================= */
+
+.skill-hover-box {
+
+    position: absolute;
+
+    top: -30px;
+
+    left: calc(100% + 20px);
+
+    width: 425px;
+
+    min-height: 470px;
+
+    padding: 28px 30px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #d1d7dc;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
+    z-index: 1000;
+
+    /* Hidden by default */
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateX(10px);
+
+    transition:
+        opacity 0.18s ease,
+        transform 0.18s ease,
+        visibility 0.18s ease;
+}
+
+
+/* =========================================================
+   SHOW HOVER BOX
+========================================================= */
+
+.skill-card:hover .skill-hover-box {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0);
+
+}
+
+
+/* =========================================================
+   HOVER BOX TITLE
+========================================================= */
+
+.skill-hover-box h3 {
+
+    margin: 0 0 14px;
+
+    color: #2d3042;
+
+    font-size: 23px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HOVER META
+========================================================= */
+
+.hover-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: #26734d;
+
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+
+/* =========================================================
+   HOVER BADGE
+========================================================= */
+
+.hover-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #c2e9eb;
+
+    color: #0b4a5a;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* PREMIUM HOVER BADGE */
+
+.hover-badge.premium {
+
+    background: #5624d0;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HOURS
+========================================================= */
+
+.hover-hours {
+
+    margin: 0 0 14px;
+
+    color: #6b7390;
+
+    font-size: 14px;
+
+    line-height: 22px;
+}
+
+
+/* =========================================================
+   HOVER DESCRIPTION
+========================================================= */
+
+.skill-hover-box > p:not(.hover-hours) {
+
+    margin: 0 0 14px;
+
+    color: #4d5060;
+
+    font-size: 16px;
+
+    line-height: 27px;
+}
+
+
+/* =========================================================
+   HOVER LIST
+========================================================= */
+
+.skill-hover-box ul {
+
+    list-style: none;
+
+    margin: 0 0 22px;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   HOVER LIST ITEM
+========================================================= */
+
+.skill-hover-box li {
+
+    position: relative;
+
+    margin-bottom: 14px;
+
+    padding-left: 38px;
+
+    color: #4d5060;
+
+    font-size: 16px;
+
+    line-height: 25px;
+}
+
+
+/* CHECK MARK */
+
+.skill-hover-box li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 1px;
+
+    color: #1c1d1f;
+
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   ADD TO CART BUTTON
+========================================================= */
+
+.skill-hover-box button {
+
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #6d28d9;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.skill-hover-box button:hover {
+
+    background: #5b21b6;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   SMALL TRIANGLE ON HOVER BOX
+   LIKE UDEMY
+========================================================= */
+
+.skill-hover-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 250px;
+
+    left: -12px;
+
+    width: 0;
+
+    height: 0;
+
+    border-top: 12px solid transparent;
+
+    border-bottom: 12px solid transparent;
+
+    border-right: 12px solid #d1d7dc;
+}
+
+
+.skill-hover-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 251px;
+
+    left: -10px;
+
+    width: 0;
+
+    height: 0;
+
+    border-top: 11px solid transparent;
+
+    border-bottom: 11px solid transparent;
+
+    border-right: 11px solid #ffffff;
+}
+
+
+/* =========================================================
+   LAST CARD
+   HOVER BOX SHOULD OPEN TO THE LEFT
+========================================================= */
+
+.skill-page .skill-card:nth-child(4) .skill-hover-box {
+
+    left: auto;
+
+    right: calc(100% + 20px);
+
+    transform: translateX(-10px);
+}
+
+
+.skill-page .skill-card:nth-child(4):hover .skill-hover-box {
+
+    transform: translateX(0);
+}
+
+
+/* LEFT TRIANGLE FOR LAST CARD */
+
+.skill-page .skill-card:nth-child(4) .skill-hover-box::before {
+
+    left: auto;
+
+    right: -12px;
+
+    border-right: none;
+
+    border-left: 12px solid #d1d7dc;
+}
+
+
+.skill-page .skill-card:nth-child(4) .skill-hover-box::after {
+
+    left: auto;
+
+    right: -10px;
+
+    border-right: none;
+
+    border-left: 11px solid #ffffff;
+}
+
+
+/* =========================================================
+   PAGE 3 CARD
+   CARD 9 HOVER BOX OPENS TO RIGHT
+========================================================= */
+
+.skills-page:nth-child(3) .skill-card:nth-child(1) .skill-hover-box {
+
+    left: calc(100% + 20px);
+
+    right: auto;
+}
+
+
+/* =========================================================
+   ARROW BUTTONS
+========================================================= */
+
+.skills-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: none;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.18);
+
+    color: #1c1d1f;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 2000;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   LEFT ARROW
+========================================================= */
+
+.skills-left {
+
+    left: -29px;
+}
+
+
+/* =========================================================
+   RIGHT ARROW
+========================================================= */
+
+.skills-right {
+
+    right: -29px;
+}
+
+
+/* =========================================================
+   ARROW HOVER
+========================================================= */
+
+.skills-arrow:hover {
+
+    background: #f7f7f7;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   HIDE ALL ARROWS FIRST
+========================================================= */
+
+.skill-page2-left,
+.skill-page3-left,
+.skill-page1-right,
+.skill-page2-right {
+
+    display: none;
+}
+
+
+/* =========================================================
+   PAGE 1
+========================================================= */
+
+#skill-page1:checked
+~ .skills-carousel
+.skills-window
+.skills-track {
+
+    transform: translateX(0);
+}
+
+
+/* PAGE 1 RIGHT */
+
+#skill-page1:checked
+~ .skills-carousel
+.skill-page1-right {
+
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 2
+========================================================= */
+
+#skill-page2:checked
+~ .skills-carousel
+.skills-window
+.skills-track {
+
+    transform: translateX(-33.333333%);
+}
+
+
+/* PAGE 2 LEFT */
+
+#skill-page2:checked
+~ .skills-carousel
+.skill-page2-left {
+
+    display: flex;
+}
+
+
+/* PAGE 2 RIGHT */
+
+#skill-page2:checked
+~ .skills-carousel
+.skill-page2-right {
+
+    display: flex;
+}
+
+
+/* =========================================================
+   PAGE 3
+========================================================= */
+
+#skill-page3:checked
+~ .skills-carousel
+.skills-window
+.skills-track {
+
+    transform: translateX(-66.666666%);
+}
+
+
+/* PAGE 3 LEFT */
+
+#skill-page3:checked
+~ .skills-carousel
+.skill-page3-left {
+
+    display: flex;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.skills-view-all {
+
+    display: inline-block;
+
+    margin-top: 28px;
+
+    color: #5624d0;
+
+    font-size: 16px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.skills-view-all:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   EXACTLY 4 CARDS
+========================================================= */
+
+@media (min-width: 1201px) {
+
+    .skills-page {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .skills-page {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+    }
+
+    .skill-card > img {
+
+        height: 190px;
+
+    }
+
+    .skill-hover-box {
+
+        width: 390px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL DESKTOP
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .skill-hover-box {
+
+        width: 360px;
+
+        padding: 22px;
+
+    }
+
+    .skill-hover-box h3 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .skills-courses-section {
+
+        padding: 0 15px;
+
+    }
+
+
+    .skills-courses-section h2 {
+
+        font-size: 26px;
+
+        line-height: 34px;
+
+    }
+
+
+    .skills-tabs {
+
+        gap: 18px;
+
+    }
+
+
+    .skills-page {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .skill-card {
+
+        padding: 15px;
+
+    }
+
+
+    .skill-card > img {
+
+        height: 190px;
+
+    }
+
+
+    .skill-content h3 {
+
+        font-size: 18px;
+
+        line-height: 24px;
+
+    }
+
+
+    .skills-arrow {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 28px;
+
+    }
+
+
+    .skills-left {
+
+        left: -12px;
+
+    }
+
+
+    .skills-right {
+
+        right: -12px;
+
+    }
+
+
+    /* Hide hover boxes on mobile */
+
+    .skill-hover-box {
+
+        display: none !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .skills-courses-section {
+
+        padding: 0 10px;
+
+    }
+
+    .skill-card {
+
+        padding: 12px;
+
+    }
+
+    .skill-card > img {
+
+        height: 180px;
+
+    }
+
+    .skill-details {
+
+        flex-wrap: wrap;
+
+        overflow: visible;
+
+    }
+
+    .skill-hover-box {
+
+        display: none !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   FINAL HOVER FIX
+   ========================================================= */
+
+/* The card itself becomes light gray on hover */
+.skill-card {
+    position: relative;
+    overflow: visible !important;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.skill-card:hover {
+    background-color: #f3f3f3 !important;
+    z-index: 9999;
+}
+
+/* Keep the image unchanged; the CARD background turns gray */
+.skill-card:hover > img {
+    opacity: 1;
+}
+
+/* Udemy-style information box */
+.skill-hover-box {
+    position: absolute !important;
+    top: -30px !important;
+    left: calc(100% + 20px) !important;
+    right: auto !important;
+
+    width: 425px !important;
+    min-height: 470px !important;
+    padding: 28px 30px !important;
+    box-sizing: border-box;
+
+    background: #ffffff !important;
+    border: 1px solid #d1d7dc !important;
+    border-radius: 10px !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12) !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transform: translateX(10px);
+    transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+
+    z-index: 10000 !important;
+}
+
+/* Show box only while mouse is over the card */
+.skill-card:hover > .skill-hover-box {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(0);
+}
+
+/* Normal cards: arrow points toward the card */
+.skill-hover-box::before {
+    content: "";
+    position: absolute;
+    top: 250px;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #d1d7dc;
+}
+
+.skill-hover-box::after {
+    content: "";
+    position: absolute;
+    top: 251px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 11px solid #ffffff;
+}
+
+/* 4th card on every page: open box toward the LEFT */
+.skill-page .skill-card:nth-child(4) > .skill-hover-box {
+    left: auto !important;
+    right: calc(100% + 20px) !important;
+    transform: translateX(-10px);
+}
+
+.skill-page .skill-card:nth-child(4):hover > .skill-hover-box {
+    transform: translateX(0);
+}
+
+/* Reverse arrow for the left-opening box */
+.skill-page .skill-card:nth-child(4) > .skill-hover-box::before {
+    left: auto;
+    right: -12px;
+    border-right: none;
+    border-left: 12px solid #d1d7dc;
+}
+
+.skill-page .skill-card:nth-child(4) > .skill-hover-box::after {
+    left: auto;
+    right: -10px;
+    border-right: none;
+    border-left: 11px solid #ffffff;
+}
+
+/* Page 3 has only card 9, so its box opens to the RIGHT */
+.skills-page:nth-child(3) .skill-card:nth-child(1) > .skill-hover-box {
+    left: calc(100% + 20px) !important;
+    right: auto !important;
+    transform: translateX(10px);
+}
+
+.skills-page:nth-child(3) .skill-card:nth-child(1):hover > .skill-hover-box {
+    transform: translateX(0);
+}
+
+/* Make sure the carousel never clips the hover box */
+.skills-carousel,
+.skills-window,
+.skills-track,
+.skills-page {
+    overflow: visible !important;
+}
+
+/* Keep exactly 4 cards visible on desktop */
+@media (min-width: 1201px) {
+    .skills-page {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        gap: 20px;
+    }
+}
+
+/* On smaller screens, hide the large hover panel */
+@media (max-width: 768px) {
+    .skill-hover-box {
+        display: none !important;
+    }
+
+    .skill-card:hover {
+        background-color: #f3f3f3 !important;
+    }
+}
+/* ================= TRUSTED COMPANIES ================= */
+
+.trusted{
+    width:100%;
+    background:#f7f9fa;
+    padding:50px 8%;
+    text-align:center;
+}
+
+.trusted p{
+    font-size:24px;
+    color:#1c1d1f;
+    margin-bottom:40px;
+    font-weight:500;
+}
+
+.company-logos{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:35px;
+}
+
+.company-logos img{
+    height:45px;
+    opacity:.7;
+    transition:.3s;
+}
+
+.company-logos img:hover{
+    opacity:1;
+    transform:scale(1.08);
+}
+
+
+/* ================= STORIES ================= */
+
+.stories{
+    width:90%;
+    margin:70px auto;
+}
+
+.stories h2{
+    font-size:34px;
+    font-weight:700;
+    color:#1c1d1f;
+    margin-bottom:35px;
+}
+
+.stories-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.story-card{
+    background:#fff;
+    border:1px solid #d1d7dc;
+    border-radius:8px;
+    padding:22px;
+    height:410px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:none;
+}
+
+.story-card:hover{
+    box-shadow:none;
+    transform:none;
+}
+
+.quote{
+    font-size:40px;
+    color:#1c1d1f;
+    margin-bottom:8px;
+    line-height:1;
+}
+
+.story-card p{
+    font-size:16px;
+    color:#2d2f31;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.student{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:auto;
+    margin-bottom:18px;
+}
+
+.student img{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.student h4{
+    font-size:16px;
+    color:#1c1d1f;
+    margin-bottom:4px;
+}
+
+.student span{
+    font-size:14px;
+    color:#6a6f73;
+    line-height:20px;
+}
+
+.story-card a{
+    color:#5624d0;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.story-card a:hover{
+    text-decoration:underline;
+}
+
+.view-stories{
+    display:inline-block;
+    margin-top:28px;
+    color:#5624d0;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+}
+
+.view-stories:hover{
+    text-decoration:underline;
+}
+
+/*================ TABLET =================*/
+
+@media(max-width:992px){
+
+.stories-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.story-card{
+    height:auto;
+}
+
+}
+
+/*================ MOBILE =================*/
+
+@media(max-width:768px){
+
+.stories{
+    width:95%;
+}
+
+.stories h2{
+    font-size:28px;
+}
+
+.stories-container{
+    grid-template-columns:1fr;
+}
+
+.story-card{
+    height:auto;
+    padding:20px;
+}
+
+.story-card p{
+    font-size:15px;
+    line-height:25px;
+}
+
+.student img{
+    width:45px;
+    height:45px;
+}
+
+.view-stories{
+    font-size:17px;
+}
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+.stories-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.company-logos{
+    justify-content:center;
+}
+
+.stories h2{
+    font-size:34px;
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.trusted{
+    padding:40px 20px;
+}
+
+.trusted p{
+    font-size:18px;
+}
+
+.company-logos{
+    gap:25px;
+}
+
+.company-logos img{
+    height:32px;
+}
+
+.stories{
+    width:95%;
+}
+
+.stories h2{
+    font-size:28px;
+}
+
+.stories-container{
+    grid-template-columns:1fr;
+}
+
+.story-card{
+    padding:22px;
+}
+
+.story-card p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.student img{
+    width:50px;
+    height:50px;
+}
+
+.student h4{
+    font-size:16px;
+}
+
+.student span{
+    font-size:14px;
+}
+
+.view-stories{
+    font-size:18px;
+}
+
+}
+
+/*================ CERTIFICATIONS =================*/
+
+.certifications{
+    width:90%;
+    margin:70px auto;
+    background:#1f2233;
+    border-radius:28px;
+    padding:55px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:45px;
+}
+
+.cert-left{
+    width:34%;
+}
+
+.cert-left h2{
+    font-size:28px;
+    color:#fff;
+    font-weight:700;
+    line-height:1.25;
+    margin-bottom:22px;
+}
+
+.cert-left p{
+    font-size:16px;
+    color:#d1d7dc;
+    line-height:30px;
+    margin-bottom:45px;
+}
+
+.cert-link{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.cert-link:hover{
+    text-decoration:underline;
+}
+
+.cert-right{
+    width:66%;
+    display:flex;
+    gap:20px;
+}
+
+.cert-card{
+    flex:1;
+    background:#1c1d1f;      /* Black */
+    border-radius:18px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:background 0.3s ease;
+}
+
+.cert-card:hover{
+    background:#35374b;      /* Gray */
+    transform:none;
+    box-shadow:none;
+}
+
+.cert-card img{
+    width:100%;
+    height:145px;
+    object-fit:cover;
+    display:block;
+}
+
+.cert-content{
+    padding:18px;
+}
+
+.cert-content h3{
+    font-size:18px;
+    color:#fff;
+    font-weight:700;
+    margin-bottom:8px;
+    transition:color 0.3s;
+}
+
+.cert-content p{
+    font-size:15px;
+    color:#c7c9d3;
+    line-height:24px;
+    transition:color 0.3s;
+}
+
+.cert-card:hover .cert-content h3{
+    color:#ffffff;
+}
+
+.cert-card:hover .cert-content p{
+    color:#d1d7dc;
+}
+
+/*================ TABLET =================*/
+
+@media (max-width:992px){
+
+    .certifications{
+        flex-direction:column;
+        padding:40px;
+    }
+
+    .cert-left,
+    .cert-right{
+        width:100%;
+    }
+
+    .cert-right{
+        flex-wrap:wrap;
+    }
+
+    .cert-card{
+        min-width:280px;
+    }
+}
+
+/*================ MOBILE =================*/
+
+@media (max-width:768px){
+
+    .certifications{
+        padding:30px 20px;
+    }
+
+    .cert-right{
+        flex-direction:column;
+    }
+
+    .cert-card img{
+        height:180px;
+    }
+
+    .cert-left h2{
+        font-size:24px;
+    }
+}
+/*================ TABLET =================*/
+
+@media(max-width:992px){
+
+.certifications{
+    flex-direction:column;
+    padding:40px;
+}
+
+.cert-left,
+.cert-right{
+    width:100%;
+}
+
+.cert-right{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+}
+
+/*================ MOBILE =================*/
+
+@media(max-width:768px){
+
+.certifications{
+    width:95%;
+    padding:25px;
+    border-radius:20px;
+}
+
+.cert-left h2{
+    font-size:24px;
+}
+
+.cert-left p{
+    font-size:15px;
+    line-height:26px;
+}
+
+.cert-link{
+    font-size:15px;
+}
+
+.cert-right{
+    grid-template-columns:1fr;
+}
+
+.cert-card img{
+    height:160px;
+}
+
+}
+/*================ CAREER ACCELERATORS =================*/
+
+/*================ CAREER =================*/
+
+.career{
+    width:90%;
+    margin:70px auto;
+}
+
+.career h2{
+    font-size:34px;
+    font-weight:700;
+    color:#1c1d1f;
+    margin-bottom:8px;
+}
+
+.career-subtitle{
+    font-size:18px;
+    color:#6a6f73;
+    margin-bottom:35px;
+}
+
+.career-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/*================ CAREER CARD =================*/
+
+.career-card{
+    background:#ffffff;
+    border:1px solid #d1d7dc;
+    border-radius:16px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:background-color .3s ease;
+}
+
+.career-card:hover{
+    background:#f3f3f3;
+    transform:none;
+    box-shadow:none;
+}
+
+.career-card img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+    display:block;
+}
+
+.career-content{
+    padding:20px;
+    background:transparent;
+    transition:background-color .3s ease;
+}
+
+.career-card:hover .career-content{
+    background:#f3f3f3;
+}
+
+.career-content h3{
+    font-size:20px;
+    font-weight:700;
+    color:#1c1d1f;
+    margin-bottom:18px;
+}
+
+.career-rating{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.career-rating span{
+    border:1px solid #d1d7dc;
+    border-radius:6px;
+    padding:6px 10px;
+    font-size:14px;
+    color:#6a6f73;
+    background:#fff;
+}
+
+.career-link{
+    display:inline-block;
+    margin-top:30px;
+    color:#5624d0;
+    font-size:18px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.career-link:hover{
+    text-decoration:none;
+}
+
+/*================ TABLET =================*/
+
+@media(max-width:992px){
+
+    .career-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/*================ MOBILE =================*/
+
+@media(max-width:768px){
+
+    .career{
+        width:95%;
+    }
+
+    .career h2{
+        font-size:28px;
+    }
+
+    .career-subtitle{
+        font-size:16px;
+    }
+
+    .career-container{
+        grid-template-columns:1fr;
+    }
+
+    .career-card img{
+        height:220px;
+    }
+
+    .career-content h3{
+        font-size:18px;
+    }
+
+    .career-rating span{
+        font-size:13px;
+        padding:5px 8px;
+    }
+
+    .career-link{
+        font-size:16px;
+    }
+
+}
+/*================ POPULAR SKILLS =================*/
+
+.popular-skills{
+    width:100%;
+    background:#f7f9fa;
+    padding:36px 0;
+}
+
+.popular-skills h2{
+    width:92%;
+    margin:0 auto;
+    padding-bottom:18px;
+    border-bottom:1px solid #d1d7dc;
+
+    font-size:27px;
+    font-weight:700;
+    color:#1c1d1f;
+}
+
+.skills-grid{
+    width:92%;
+    margin:30px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+    260px
+    210px
+    210px
+    440px;
+
+    column-gap:30px;
+}
+
+/* Left Column */
+
+.skill-column h3{
+    font-size:24px;
+    font-weight:700;
+    line-height:1.15;
+    color:#1c1d1f;
+    margin-bottom:18px;
+}
+
+.skill-column h4{
+    font-size:18px;
+    font-weight:700;
+    color:#1c1d1f;
+    margin-bottom:18px;
+}
+
+/* Links */
+
+.skill-column a{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+
+    color:#5624d0;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    line-height:1.2;
+}
+
+.skill-column a:hover{
+    text-decoration:underline;
+}
+
+.skill-column a span{
+    font-size:18px;
+    font-weight:400;
+}
+
+/* Learners */
+
+.skill-column p{
+    color:#6a6f73;
+    font-size:14px;
+    margin-top:4px;
+    margin-bottom:16px;
+    line-height:20px;
+}
+
+.skill-item{
+    margin-bottom:18px;
+}
+
+/* Button */
+
+.skill-btn{
+
+    margin-top:10px;
+
+    width:220px;
+    height:40px;
+
+    border:1px solid #5624d0;
+    border-radius:5px;
+
+    background:#fff;
+
+    color:#5624d0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.skill-btn:hover{
+    background:#ede5ff;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+row-gap:30px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.popular-skills h2{
+
+width:95%;
+
+font-size:24px;
+
+}
+
+.skills-grid{
+
+width:95%;
+
+grid-template-columns:1fr;
+
+}
+
+.skill-btn{
+
+width:100%;
+
+}
+
+}
+/*================ LEARN AI WITH GOOGLE =================*/
+/* =========================================================
+   GOOGLE AI SECTION
+========================================================= */
+
+.google-ai {
+    width: 90%;
+    max-width: 1600px;
+    margin: 70px auto;
+    box-sizing: border-box;
+}
+
+.google-ai h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #1c1d1f;
+    margin: 0 0 25px;
+}
+
+
+/* =========================================================
+   HIDE RADIO BUTTONS
+========================================================= */
+
+.google-ai > input[type="radio"] {
+    display: none;
+}
+
+
+/* =========================================================
+   MAIN WRAPPER
+========================================================= */
+
+.google-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    width: 100%;
+
+    background: #0f4c5c;
+
+    border-radius: 22px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT FIXED CARD
+========================================================= */
+
+.google-main {
+    width: 340px;
+    min-width: 340px;
+
+    height: 367px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    z-index: 5;
+
+    transition: background-color 0.25s ease;
+}
+
+.google-main:hover {
+    background-color: #f3f3f3;
+}
+
+
+/* =========================================================
+   GOOGLE LOGO
+========================================================= */
+
+.google-logo {
+    width: 110px;
+    height: auto;
+
+    margin-bottom: 16px;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LEFT CARD TITLE
+========================================================= */
+
+.google-main h3 {
+    font-size: 29px;
+    line-height: 34px;
+
+    font-weight: 700;
+
+    color: #1c1d1f;
+
+    margin: 0 0 10px;
+}
+
+
+/* =========================================================
+   LEFT CARD DESCRIPTION
+========================================================= */
+
+.google-main p {
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #3c3f46;
+
+    margin: 0 0 20px;
+}
+
+
+/* =========================================================
+   LEFT CARD BADGES
+========================================================= */
+
+.google-badges {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+.google-badges span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 28px;
+
+    border: 1px solid #c8d0d8;
+
+    border-radius: 5px;
+
+    padding: 4px 8px;
+
+    background: #ffffff;
+
+    font-size: 13px;
+
+    color: #6a6f73;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LEARN MORE BUTTON
+========================================================= */
+
+.google-main button {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: auto;
+
+    border: 1px solid #5624d0;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #5624d0;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.google-main button:hover {
+    background: #5624d0;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RIGHT CAROUSEL
+========================================================= */
+
+.google-carousel {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 367px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD WINDOW
+========================================================= */
+
+.google-window {
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   MOVING TRACK
+
+   IMPORTANT:
+   Width is based on the carousel.
+========================================================= */
+
+.google-slider {
+    display: flex;
+
+    gap: 20px;
+
+    height: 100%;
+
+    width: max-content;
+
+    transition: transform 0.5s ease;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   COURSE CARD
+
+   4 cards will fit exactly in the visible area.
+========================================================= */
+
+.google-card {
+    /*
+       The carousel width changes depending on screen size.
+       This width is controlled below using CSS variables.
+    */
+
+    width: 220px;
+
+    min-width: 220px;
+
+    height: 305px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.google-card:hover {
+    background-color: #f3f3f3;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.google-card img {
+    width: 100%;
+
+    height: 145px;
+
+    object-fit: cover;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CARD BODY
+========================================================= */
+
+.card-body {
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.card-body h4 {
+    font-size: 20px;
+
+    line-height: 25px;
+
+    font-weight: 700;
+
+    color: #1c1d1f;
+
+    margin: 0;
+
+    min-height: 75px;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.small-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: auto;
+}
+
+.small-tags span {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 28px;
+
+    border: 1px solid #c8d0d8;
+
+    border-radius: 4px;
+
+    padding: 4px 8px;
+
+    background: #ffffff;
+
+    font-size: 12px;
+
+    color: #6a6f73;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.google-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1c1d1f;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 50;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.20);
+
+    user-select: none;
+}
+
+.google-arrow:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================================================
+   ARROW POSITIONS
+========================================================= */
+
+.google-left {
+    left: 5px;
+}
+
+.google-right {
+    right: 5px;
+}
+
+
+/* =========================================================
+   HIDE ARROWS INITIALLY
+========================================================= */
+
+.google-arrow {
+    display: none;
+}
+
+
+/* =========================================================
+   SHOW RIGHT ARROW - SLIDE 1
+========================================================= */
+
+#google-slide-1:checked ~ .google-wrapper
+.google-carousel .right-1 {
+    display: flex;
+}
+
+
+/* =========================================================
+   SLIDE 2
+========================================================= */
+
+#google-slide-2:checked ~ .google-wrapper
+.google-carousel .left-2,
+
+#google-slide-2:checked ~ .google-wrapper
+.google-carousel .right-2 {
+    display: flex;
+}
+
+
+/* =========================================================
+   SLIDE 3
+========================================================= */
+
+#google-slide-3:checked ~ .google-wrapper
+.google-carousel .left-3,
+
+#google-slide-3:checked ~ .google-wrapper
+.google-carousel .right-3 {
+    display: flex;
+}
+
+
+/* =========================================================
+   SLIDE 4
+========================================================= */
+
+#google-slide-4:checked ~ .google-wrapper
+.google-carousel .left-4 {
+    display: flex;
+}
+
+
+/* =========================================================
+   DESKTOP CARD WIDTH
+========================================================= */
+
+/*
+   Available carousel width:
+   wrapper width
+   - left card 340px
+   - gap 20px
+   - wrapper padding 44px
+
+   Then 4 cards + 3 gaps fit exactly.
+*/
+
+@media (min-width: 1201px) {
+
+    .google-card {
+        width: calc(
+            (100vw * 0.90 - 340px - 64px - 60px) / 4
+        );
+
+        min-width: calc(
+            (100vw * 0.90 - 340px - 64px - 60px) / 4
+        );
+    }
+
+}
+
+
+/* =========================================================
+   CARD MOVEMENT - DESKTOP
+========================================================= */
+
+@media (min-width: 1201px) {
+
+    #google-slide-1:checked ~ .google-wrapper
+    .google-carousel .google-slider {
+        transform: translateX(0);
+    }
+
+    #google-slide-2:checked ~ .google-wrapper
+    .google-carousel .google-slider {
+        transform:
+            translateX(
+                calc(
+                    -1 *
+                    (
+                        (100vw * 0.90 - 340px - 64px - 60px) / 4
+                        + 20px
+                    )
+                )
+            );
+    }
+
+    #google-slide-3:checked ~ .google-wrapper
+    .google-carousel .google-slider {
+        transform:
+            translateX(
+                calc(
+                    -2 *
+                    (
+                        (100vw * 0.90 - 340px - 64px - 60px) / 4
+                        + 20px
+                    )
+                )
+            );
+    }
+
+    #google-slide-4:checked ~ .google-wrapper
+    .google-carousel .google-slider {
+        transform:
+            translateX(
+                calc(
+                    -3 *
+                    (
+                        (100vw * 0.90 - 340px - 64px - 60px) / 4
+                        + 20px
+                    )
+                )
+            );
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 769px) {
+
+    .google-ai {
+        width: 94%;
+    }
+
+    .google-main {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .google-card {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .google-slider {
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .google-ai {
+        width: 95%;
+
+        margin: 50px auto;
+    }
+
+    .google-ai h2 {
+        font-size: 30px;
+
+        line-height: 36px;
+    }
+
+    .google-wrapper {
+        padding: 18px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .google-main {
+        width: 100%;
+
+        min-width: 100%;
+
+        height: auto;
+
+        min-height: 350px;
+    }
+
+    .google-carousel {
+        width: 100%;
+
+        height: 340px;
+    }
+
+    .google-card {
+        width: 240px;
+
+        min-width: 240px;
+
+        height: 320px;
+    }
+
+    .google-card img {
+        height: 145px;
+    }
+
+    .card-body h4 {
+        font-size: 18px;
+
+        line-height: 23px;
+    }
+
+    .google-arrow {
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 28px;
+    }
+
+}
+/*================ FOOTER =================*/
+
+.footer{
+    background:#2f3148;
+}
+
+.footer-top{
+    width:94%;
+    margin:0 auto;
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-text{
+    flex:1;
+}
+
+.footer-text h3{
+    font-size:16px;
+    font-weight:700;
+    color:#fff;
+    line-height:1.4;
+    margin:0;
+}
+
+.footer-text span{
+    color:#cec0fc;
+}
+
+.footer-logos{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.footer-logos img{
+    height:26px;
+    width:auto;
+}
+
+.footer hr{
+    border:none;
+    border-top:1px solid #4d4f61;
+    margin:0;
+}
+
+.footer-links{
+    width:94%;
+    margin:0 auto;
+    padding:34px 0 42px;
+}
+
+.footer-links h2{
+    font-size:21px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:32px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:42px 50px;
+}
+
+.footer-column h4{
+    font-size:15px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.footer-column a{
+    display:block;
+    color:#d1d7dc;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:400;
+    line-height:1.9;
+    margin-bottom:2px;
+    transition:.2s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+/*================ TABLET =================*/
+
+@media(max-width:992px){
+
+.footer-top{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/*================ MOBILE =================*/
+
+@media(max-width:768px){
+
+.footer-top{
+    padding:18px 0;
+}
+
+.footer-links{
+    padding:28px 0;
+}
+
+.footer-links h2{
+    font-size:18px;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+}
+
+.footer-column h4{
+    font-size:14px;
+}
+
+.footer-column a{
+    font-size:13px;
+    line-height:1.8;
+}
+
+.footer-logos{
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.footer-logos img{
+    height:22px;
+}
+
+}
+/*================ BOTTOM FOOTER ================*/
+
+.footer-bottom{
+    background:#1c1d1f;
+    color:#fff;
+    width:100%;
+}
+
+.footer-menu{
+    width:95%;
+    margin:0 auto;
+    padding:50px 0 35px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap:80px;
+}
+
+.footer-box h4{
+    font-size:16px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.footer-box a{
+    display:block;
+    text-decoration:none;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:400;
+    margin-bottom:14px;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    text-decoration:underline;
+}
+
+.footer-bottom hr{
+    border:none;
+    border-top:1px solid #5a5a5a;
+    margin:0;
+}
+
+.footer-last{
+    width:95%;
+    margin:0 auto;
+    padding:22px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.footer-logo img{
+    height:42px;
+    width:auto;
+}
+
+.footer-logo span{
+    font-size:14px;
+    color:#ffffff;
+}
+
+.cookie a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:15px;
+}
+
+.cookie a:hover{
+    text-decoration:underline;
+}
+
+.language{
+    color:#ffffff;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:992px){
+
+.footer-menu{
+    grid-template-columns:repeat(2,1fr);
+    row-gap:40px;
+}
+
+.footer-last{
+    flex-direction:column;
+    gap:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-menu{
+    grid-template-columns:1fr;
+}
+
+.footer-box h4{
+    font-size:15px;
+}
+
+.footer-box a{
+    font-size:14px;
+}
+
+.footer-logo img{
+    height:36px;
+}
+
+}
+/* =========================================================
+   FINAL FIX FOR SKILLS COURSE CARDS
+   Paste this at the VERY BOTTOM of style.css
+========================================================= */
+
+
+/* CARD */
+
+.skills-courses-section .skill-card {
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    position: relative !important;
+
+    display: block !important;
+
+    overflow: hidden !important;
+
+    padding: 20px !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d1d7dc !important;
+
+    border-radius: 14px !important;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.skills-courses-section .skill-card > img {
+    position: static !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: 100% !important;
+
+    height: 195px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+
+    object-position: center !important;
+
+    border-radius: 8px !important;
+
+    transform: none !important;
+
+    filter: none !important;
+}
+
+
+/* =========================================================
+   CONTENT BELOW IMAGE
+========================================================= */
+
+.skills-courses-section .skill-content {
+    position: static !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 18px 0 0 !important;
+
+    box-sizing: border-box !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.skills-courses-section .skill-content h3 {
+    position: static !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    color: #1c1d1f !important;
+
+    font-size: 19px !important;
+
+    line-height: 25px !important;
+
+    font-weight: 700 !important;
+
+    min-height: 50px;
+
+    max-height: 50px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.skills-courses-section .skill-author {
+    margin: 8px 0 0 !important;
+
+    padding: 0 !important;
+
+    color: #6a6f73 !important;
+
+    font-size: 13px !important;
+
+    line-height: 20px !important;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.skills-courses-section .skill-details {
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    gap: 5px !important;
+
+    width: 100% !important;
+
+    height: 30px !important;
+
+    min-height: 30px !important;
+
+    margin: 25px 0 0 !important;
+
+    padding: 0 !important;
+
+    flex-wrap: nowrap !important;
+
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.skills-courses-section .skill-badge {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    height: 28px !important;
+
+    padding: 0 9px !important;
+
+    margin: 0 !important;
+
+    background: #c7ecef !important;
+
+    color: #164e59 !important;
+
+    border-radius: 4px !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* PREMIUM */
+
+.skills-courses-section .skill-badge.premium {
+    background: #5624d0 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.skills-courses-section .skill-rating {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    height: 28px !important;
+
+    padding: 0 8px !important;
+
+    margin: 0 !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #cfd5dc !important;
+
+    border-radius: 4px !important;
+
+    color: #b4690e !important;
+
+    font-size: 12px !important;
+
+    white-space: nowrap !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   RATINGS COUNT
+========================================================= */
+
+.skills-courses-section .skill-ratings {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    height: 28px !important;
+
+    padding: 0 8px !important;
+
+    margin: 0 !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #cfd5dc !important;
+
+    border-radius: 4px !important;
+
+    color: #6a6f73 !important;
+
+    font-size: 12px !important;
+
+    white-space: nowrap !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.skills-courses-section .skill-price {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    margin: 18px 0 0 !important;
+
+    padding: 0 !important;
+
+    height: auto !important;
+}
+
+
+/* CURRENT PRICE */
+
+.skills-courses-section .skill-current {
+    color: #1c1d1f !important;
+
+    font-size: 20px !important;
+
+    line-height: 26px !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* OLD PRICE */
+
+.skills-courses-section .skill-old {
+    color: #6a6f73 !important;
+
+    font-size: 14px !important;
+
+    line-height: 20px !important;
+
+    text-decoration: line-through !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.skills-courses-section .skill-card:hover {
+    background: #f5f5f5 !important;
+
+    border-color: #d5d5d5 !important;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08) !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.skills-courses-section .skill-card:hover > img {
+    position: static !important;
+
+    transform: none !important;
+
+    filter: none !important;
+}
+
+
+/* =========================================================
+   KEEP CONTENT VISIBLE ON HOVER
+========================================================= */
+
+.skills-courses-section .skill-card:hover .skill-content {
+    display: flex !important;
+
+    position: static !important;
+
+    background: transparent !important;
+}
+/* =========================================================
+   SKILL COURSES - FINAL HOVER BOX FIX
+   PASTE THIS AT THE VERY END OF CSS
+========================================================= */
+
+/* Main Skill Courses section */
+.skills-courses-section {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+
+/* Carousel */
+.skills-courses-section .skills-carousel {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+
+/* Window */
+.skills-courses-section .skills-window {
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+
+/* Track */
+.skills-courses-section .skills-track {
+    overflow: visible !important;
+}
+
+
+/* Each page */
+.skills-courses-section .skills-page {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.skills-courses-section .skill-card {
+
+    position: relative !important;
+
+    overflow: visible !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d1d7dc !important;
+
+    border-radius: 14px !important;
+
+    z-index: 1 !important;
+
+    cursor: pointer !important;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.skills-courses-section .skill-card:hover {
+
+    background: #f3f3f3 !important;
+
+    border-color: #cfd5dc !important;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10) !important;
+
+    z-index: 999999 !important;
+}
+
+
+/* =========================================================
+   IMAGE
+   Keep image normal
+========================================================= */
+
+.skills-courses-section .skill-card:hover > img {
+
+    opacity: 1 !important;
+
+    filter: none !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   HOVER BOX - HIDDEN
+========================================================= */
+
+.skills-courses-section .skill-card > .skill-hover-box {
+
+    display: block !important;
+
+    position: absolute !important;
+
+    top: -30px !important;
+
+    left: calc(100% + 20px) !important;
+
+    right: auto !important;
+
+    width: 425px !important;
+
+    min-height: 470px !important;
+
+    padding: 28px 30px !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d1d7dc !important;
+
+    border-radius: 10px !important;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.18) !important;
+
+    opacity: 0 !important;
+
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    transform: translateX(15px) !important;
+
+    z-index: 9999999 !important;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+
+/* =========================================================
+   SHOW BOX
+========================================================= */
+
+.skills-courses-section .skill-card:hover > .skill-hover-box {
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    transform: translateX(0) !important;
+}
+
+
+/* =========================================================
+   HOVER BOX TITLE
+========================================================= */
+
+.skills-courses-section .skill-hover-box h3 {
+
+    margin: 0 0 14px !important;
+
+    font-size: 23px !important;
+
+    line-height: 31px !important;
+
+    font-weight: 700 !important;
+
+    color: #2d3042 !important;
+}
+
+
+/* =========================================================
+   HOVER BOX TEXT
+========================================================= */
+
+.skills-courses-section .skill-hover-box p {
+
+    color: #4d5060 !important;
+
+    font-size: 15px !important;
+
+    line-height: 24px !important;
+}
+
+
+/* =========================================================
+   HOVER LIST
+========================================================= */
+
+.skills-courses-section .skill-hover-box ul {
+
+    list-style: none !important;
+
+    padding: 0 !important;
+
+    margin: 10px 0 22px !important;
+}
+
+
+.skills-courses-section .skill-hover-box li {
+
+    position: relative !important;
+
+    padding-left: 30px !important;
+
+    margin-bottom: 13px !important;
+
+    color: #4d5060 !important;
+
+    font-size: 15px !important;
+
+    line-height: 24px !important;
+}
+
+
+.skills-courses-section .skill-hover-box li::before {
+
+    content: "✓" !important;
+
+    position: absolute !important;
+
+    left: 0 !important;
+
+    top: 0 !important;
+
+    color: #1c1d1f !important;
+
+    font-weight: 700 !important;
+
+    font-size: 17px !important;
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+.skills-courses-section .skill-hover-box button {
+
+    width: 100% !important;
+
+    height: 58px !important;
+
+    border: none !important;
+
+    border-radius: 7px !important;
+
+    background: #6d28d9 !important;
+
+    color: #ffffff !important;
+
+    font-size: 18px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+}
+
+
+.skills-courses-section .skill-hover-box button:hover {
+
+    background: #5620ad !important;
+}
+
+
+/* =========================================================
+   RIGHT ARROW OF HOVER BOX
+========================================================= */
+
+.skills-courses-section .skill-hover-box::before {
+
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: -13px !important;
+
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    width: 0 !important;
+
+    height: 0 !important;
+
+    border-top: 12px solid transparent !important;
+
+    border-bottom: 12px solid transparent !important;
+
+    border-right: 13px solid #d1d7dc !important;
+}
+
+
+.skills-courses-section .skill-hover-box::after {
+
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: -11px !important;
+
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    width: 0 !important;
+
+    height: 0 !important;
+
+    border-top: 11px solid transparent !important;
+
+    border-bottom: 11px solid transparent !important;
+
+    border-right: 11px solid #ffffff !important;
+}
+
+
+/* =========================================================
+   4TH CARD
+   BOX OPENS TO LEFT
+========================================================= */
+
+.skills-courses-section
+.skills-page
+.skill-card:nth-child(4)
+> .skill-hover-box {
+
+    left: auto !important;
+
+    right: calc(100% + 20px) !important;
+
+    transform: translateX(-15px) !important;
+}
+
+
+.skills-courses-section
+.skills-page
+.skill-card:nth-child(4):hover
+> .skill-hover-box {
+
+    transform: translateX(0) !important;
+}
+
+
+/* =========================================================
+   LEFT ARROW FOR 4TH CARD
+========================================================= */
+
+.skills-courses-section
+.skills-page
+.skill-card:nth-child(4)
+> .skill-hover-box::before {
+
+    left: auto !important;
+
+    right: -13px !important;
+
+    border-right: none !important;
+
+    border-left: 13px solid #d1d7dc !important;
+}
+
+
+.skills-courses-section
+.skills-page
+.skill-card:nth-child(4)
+> .skill-hover-box::after {
+
+    left: auto !important;
+
+    right: -11px !important;
+
+    border-right: none !important;
+
+    border-left: 11px solid #ffffff !important;
+}
+
+
+/* =========================================================
+   CARD 9
+   BOX OPENS TO RIGHT
+========================================================= */
+
+.skills-courses-section
+.skills-page:nth-child(3)
+.skill-card:nth-child(1)
+> .skill-hover-box {
+
+    left: calc(100% + 20px) !important;
+
+    right: auto !important;
+
+    transform: translateX(15px) !important;
+}
+
+
+.skills-courses-section
+.skills-page:nth-child(3)
+.skill-card:nth-child(1):hover
+> .skill-hover-box {
+
+    transform: translateX(0) !important;
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 1201px) {
+
+    .skills-courses-section
+    .skills-page {
+
+        grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+        gap: 20px !important;
+
+        overflow: visible !important;
+    }
+
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   FORCE HOVER BOX TO BE VISIBLE ON DESKTOP
+========================================================= */
+
+@media (min-width: 769px) {
+
+    .skills-courses-section
+    .skill-card:hover
+    > .skill-hover-box {
+
+        display: block !important;
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .skills-courses-section
+    .skill-hover-box {
+
+        display: none !important;
+    }
+
+}
+/* =========================================================
+   CATEGORY CARDS - NO GRAY HOVER ON IMAGE
+========================================================= */
+
+.categories .skill-card {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* When cursor is on category card */
+.categories .skill-card:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+
+/* Keep image exactly the same on hover */
+.categories .skill-card img,
+.categories .skill-card:hover img {
+    opacity: 1 !important;
+    filter: none !important;
+    background: transparent !important;
+    transform: none !important;
+}
+
+
+/* Keep the white name box white */
+.categories .skill-card .card-label,
+.categories .skill-card:hover .card-label {
+    background: #ffffff !important;
+    color: #1c1d1f !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+
+/* Arrow stays normal */
+.categories .skill-card .card-label span:last-child,
+.categories .skill-card:hover .card-label span:last-child {
+    color: #1c1d1f !important;
+}
+/* =========================================================
+   CATEGORY CARDS - IMAGE MUST COVER WHOLE CARD
+========================================================= */
+
+/* Card */
+.categories .skill-card {
+    position: relative !important;
+    width: 300px !important;
+    min-width: 300px !important;
+    height: 330px !important;
+
+    overflow: hidden !important;
+
+    border-radius: 15px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    flex: 0 0 300px !important;
+}
+
+
+/* IMAGE - FULL CARD BACKGROUND */
+.categories .skill-card > img {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+
+    opacity: 1 !important;
+
+    filter: none !important;
+
+    transform: none !important;
+
+    z-index: 1 !important;
+}
+
+
+/* Do NOT change image when hovering */
+.categories .skill-card:hover > img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    opacity: 1 !important;
+
+    filter: none !important;
+
+    transform: none !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   WHITE LABEL ON TOP OF IMAGE
+========================================================= */
+
+.categories .skill-card > .card-label {
+    position: absolute !important;
+
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+
+    width: auto !important;
+    height: 75px !important;
+
+    padding: 18px !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border-radius: 7px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    color: #1c1d1f !important;
+
+    font-size: 17px !important;
+
+    z-index: 10 !important;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+
+/* Keep label white on hover */
+.categories .skill-card:hover > .card-label {
+    background: #ffffff !important;
+
+    color: #1c1d1f !important;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+
+/* Arrow */
+.categories .skill-card > .card-label span:last-child {
+    font-size: 26px !important;
+
+    color: #1c1d1f !important;
+
+    line-height: 1 !important;
+}
+
+
+/* =========================================================
+   NO GRAY HOVER
+========================================================= */
+
+.categories .skill-card:hover {
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   CARD BORDER
+========================================================= */
+
+.categories .skill-card::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    border-radius: 15px !important;
+
+    pointer-events: none !important;
+
+    z-index: 5 !important;
+}
